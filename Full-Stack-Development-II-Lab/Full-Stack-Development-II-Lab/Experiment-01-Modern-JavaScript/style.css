@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f3f5f9; color: #222; }
+header { background: #1f3a93; color: #fff; padding: 16px; text-align: center; }
+main { max-width: 900px; margin: 16px auto; padding: 0 12px; display: grid; gap: 14px; }
+.card { background: #fff; border-radius: 8px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+.card h2 { margin-top: 0; font-size: 1.1rem; color: #1f3a93; }
+.note, .info { color: #555; font-size: .9rem; }
+button { background: #1f3a93; color: #fff; border: 0; padding: 8px 14px; border-radius: 6px; cursor: pointer; margin: 4px 0; }
+button:hover { background: #162a6b; }
+#hover-box { padding: 18px; background: #e8eefc; border: 2px dashed #1f3a93; text-align: center; margin-bottom: 8px; }
+#hover-box.active { background: #ffe9a8; }
+.highlight { background: #fff3a0; font-weight: bold; }
+pre { background: #111; color: #9efc9e; padding: 12px; border-radius: 6px; overflow-x: auto; white-space: pre-wrap; min-height: 80px; }
+@media (min-width: 700px) { main { grid-template-columns: 1fr 1fr; } main .card:last-child { grid-column: 1 / -1; } }

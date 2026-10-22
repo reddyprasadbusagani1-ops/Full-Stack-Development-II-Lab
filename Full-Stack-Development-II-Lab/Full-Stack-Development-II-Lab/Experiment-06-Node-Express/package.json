@@ -1,0 +1,21 @@
+{
+  "name": "experiment-06-node-express",
+  "version": "1.0.0",
+  "description": "Full Stack Development-II Experiment 6: Node.js, Express.js and MySQL",
+  "private": true,
+  "license": "MIT",
+  "author": "Busagani Reddy Prasad",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start:a": "node src/ex6a-hello-world.js",
+    "start:b": "node src/ex6b-website.js",
+    "start:c": "node src/ex6c-console-hello.js",
+    "start:d": "node src/ex6d-crud-memory.js",
+    "start:e": "node src/ex6e-mysql-api.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}

@@ -1,0 +1,39 @@
+### Requests for the VS Code "REST Client" extension (humao.rest-client).
+### Click "Send Request" above each request. Change the port: 3004 = in-memory (6d), 3005 = MySQL (6e).
+@base = http://localhost:3004
+
+### Get all students
+GET {{base}}/api/students
+
+### Get one student
+GET {{base}}/api/students/1
+
+### Create a student (expect 201)
+POST {{base}}/api/students
+Content-Type: application/json
+
+{
+  "name": "Sita",
+  "email": "sita@example.com",
+  "department": "AI&DS",
+  "year": 1,
+  "cgpa": 9.1
+}
+
+### Invalid create (expect 400)
+POST {{base}}/api/students
+Content-Type: application/json
+
+{ "name": "A", "email": "not-an-email", "year": 9 }
+
+### Update a student (expect 200)
+PUT {{base}}/api/students/1
+Content-Type: application/json
+
+{ "year": 3, "cgpa": 8.9 }
+
+### Delete a student (expect 204)
+DELETE {{base}}/api/students/2
+
+### Not found (expect 404)
+GET {{base}}/api/students/999

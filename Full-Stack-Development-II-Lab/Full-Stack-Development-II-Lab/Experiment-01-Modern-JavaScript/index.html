@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiment 1 - Modern JavaScript and DOM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="main-title">Experiment 1: Modern JavaScript and DOM</h1>
+    <p class="note">Open the browser console (F12) to see extra messages.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1a. External JavaScript</h2>
+      <p class="info">script.js is linked at the bottom of this page.</p>
+      <p id="link-status">Waiting for script.js...</p>
+    </section>
+
+    <section class="card">
+      <h2>1b. DOM Selectors</h2>
+      <p class="info">getElementById, querySelector and querySelectorAll are used.</p>
+      <ul>
+        <li class="fruit">Apple</li>
+        <li class="fruit">Banana</li>
+        <li class="fruit">Mango</li>
+      </ul>
+      <button id="select-btn">Highlight all fruits</button>
+    </section>
+
+    <section class="card">
+      <h2>1c and 1d. Events</h2>
+      <div id="hover-box">Move your mouse over this box</div>
+      <button id="click-btn">Click me</button>
+      <p id="click-output">Button not clicked yet.</p>
+    </section>
+
+    <section class="card">
+      <h2>1e. Functions</h2>
+      <button id="func-btn">Run function demos</button>
+    </section>
+
+    <section class="card">
+      <h2>ES6 Features</h2>
+      <button id="es6-btn">Run ES6 demos</button>
+    </section>
+
+    <section class="card">
+      <h2>Output</h2>
+      <pre id="output">(Click the buttons above)</pre>
+    </section>
+  </main>
+
+  <!-- 1a: Link an external JavaScript file. Placed at the end so the HTML loads first. -->
+  <script src="script.js"></script>
+</body>
+</html>
